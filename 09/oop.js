@@ -13,9 +13,8 @@ class Person {
     console.log(`Hello, my name is ${this.name}!`);
   }
 }
-const user = new Person("Bob", 22);
+const user = new Person("John", 30);
 user.sayHello();
-
 
 // Створіть клас Student, який наслідує від класу Person.
 
@@ -24,14 +23,16 @@ user.sayHello();
 // Додайте метод study, який виводить повідомлення про вивчення студентом.
 
 class Student extends Person {
-    constructor(name, age, studentId) {
-        super(name, age);
-        this.studentId = studentId; 
-    }
+  constructor(name, age, studentId) {
+    super(name, age);
+    this.studentId = studentId;
+  }
 
-    study() {
-        console.log(`${this.name} is studying. Their student ID is ${this.studentId}.`);
-    }
+  study() {
+    console.log(
+      `${this.name} is studying. Their student ID is ${this.studentId}.`
+    );
+  }
 }
 const student1 = new Student("Bob", 34, "English");
-student1.study();    
+student1.study();
