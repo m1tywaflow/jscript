@@ -28,5 +28,6 @@ window.onload = function () {
     div.style.height = "50px";
     div.style.backgroundColor = "green";
     div.setAttribute("class", "circle-elemt");
+    div.style.backgroundColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   }
 };
