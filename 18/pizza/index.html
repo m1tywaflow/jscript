@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+      body {
+        font-family: "Montserrat", serif;
+        background-color: rgb(182, 150, 46);
+        font-size: 25px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      #price {
+        font-size: 22px;
+        margin-top: 17px;
+        color:green;
+      }
+      #first {
+        width: 185px;
+        height: 150px;
+      }
+      #second {
+        width: 185px;
+        height: 150px;
+      }
+      #third {
+        width: 185px;
+        height: 150px;
+      }
+      #fourth {
+        width: 185px;
+        height: 150px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Замовлення піци</h1>
+      <div class="img">
+        <img id="first" src="pizza.jpg" alt="pizza" />
+        <img id="second" src="pizza2.jpg" alt="pizza" />
+        <img id="third" src="pizza3.jpg" alt="pizza" />
+        <img id="fourth" src="pizza4.jpg" alt="pizza" />
+      </div>
+
+      <form id="pizzaOrderForm">
+        <div>
+          <label for="pizzaType">Оберіть піцу:</label>
+          <select id="pizzaType">
+            <option value="">-- Вибрати піцу --</option>
+            <option value="Маргарита">Гавайська</option>
+            <option value="Пепероні">Пепероні</option>
+            <option value="Чотири сири">Чотири сири</option>
+            <option value="Мисливська">Мисливська</option>
+            <option value="Маргарита">Маргарита</option>
+            <option value="Італьяно">Італьяно</option>
+          </select>
+        </div>
+
+        <div>
+          <h3>Оберіть розмір:</h3>
+          <input type="radio" id="small" name="size" value="100" />
+          <label for="small">Маленька</label>
+          <input type="radio" id="medium" name="size" value="150" />
+          <label for="medium">Середня</label>
+          <input type="radio" id="large" name="size" value="200" />
+          <label for="large">Велика</label>
+        </div>
+
+        <div>
+          <h3>Додаткова начинка:</h3>
+          <input type="checkbox" id="cheese" name="topping" value="25" />
+          <label for="cheese">Сир</label>
+          <input type="checkbox" id="bacon" name="topping" value="25" />
+          <label for="bacon">Бекон</label>
+          <input type="checkbox" id="mushrooms" name="topping" value="25" />
+          <label for="mushrooms">Гриби</label>
+        </div>
+      </form>
+
+      <div id="price">Ціна: 0 грн</div>
+    </div>
+  </body>
+</html>

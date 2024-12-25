@@ -8,7 +8,7 @@ window.onload = function(){
             return;
         }
 
-        const convertedAmount = amount * rate;
+        const convertedAmount = amount / rate;
         document.getElementById('result').textContent = `Результат: ${convertedAmount.toFixed(2)} ($,€...)`;
     });
 }
