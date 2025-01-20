@@ -1,0 +1,12 @@
+:root{
+    --bg-color:black;
+    --text-color:skyblue;
+    --tilte-color:red;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+h1{
+    color: var(--tilte-color);
+}
