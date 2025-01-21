@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <input type="text" id="inputText" />
+    <button id="save">Зберегти</button>
+    <button id="show">Показати збережені дані</button>
+    <p id="output"></p>
+    <form id="settings-form">
+      <label for="background-color">Background Color:</label>
+      <select id="background-color">
+        <option value="#ffffff">white</option>
+        <option value="#000000">black</option>
+        <option value="#fafad2">light Goldenrod Yellow</option>
+        <option value="#d3ffce">mint Green</option>
+        <option value="#ffcccb">light Red</option>
+      </select>
+      <button type="submit">Save</button>
+    </form>
+    <h1>To-Do List</h1>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Enter a task" required />
+      <button type="submit">Add</button>
+    </form>
+    <ul id="todo-list"></ul>
+  </body>
+</html>
