@@ -1,0 +1,19 @@
+#config git ignore
+
+node_modules/
+
+#other files
+secret.txt
+confing.env
+
+#ignore all files
+*.log
+*.temp
+*.zip
+*.rar
+
+#ignore folder
+test/
+
+#DS store ignore
+.DS_Store
